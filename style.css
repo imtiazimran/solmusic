@@ -1,0 +1,593 @@
+ body{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.container-fluid{
+    max-width: 1400px;
+    margin: auto;
+}
+.container{
+    max-width: 1176px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+/*-----------------header section-----------------*/
+header{
+    background: #08192d;
+    padding: 50px 0px;
+    position: relative;
+}
+header .row{
+    justify-content: space-between;
+}
+nav ul{
+    margin-top: -10px;
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+    text-transform: capitalize;
+    margin-right: 60px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 20px 0px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 44px 10px;
+    font-weight: 400 !important;
+}
+.user-log{
+    text-transform: capitalize;
+    margin-top: -10px;
+}
+.user-log .help{
+    padding-right: 10px;
+    height: 58px;
+    color: #979aa5;
+}
+.user-log span{
+    color: #fff;
+}
+.user-log a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 18px;
+}
+.new-user{
+    display: inline;
+    margin-left: 20px;
+}
+.new-user a{
+    margin-right: 15px;
+}
+.new-user a:last-child{
+    color: #fc0254;
+}
+
+/*-----------------header sticky nav -----------------*/
+.sticky-menu{
+    background: #4c4c4c;
+    width: 1400px;
+    margin-bottom: -50px;
+    margin-top: 20px;
+    height: 60px;
+}
+.sticky-menu-ul{
+    margin-top: 50px;
+    display: none;
+}
+.sticky-menu ul li{
+    list-style: none;
+    text-transform: capitalize;
+    margin-top: 5px;
+    padding: 5px;
+    max-width: 1080px;
+}
+.sticky-menu .user-log{
+    margin-top: 100px;
+}
+.sticky-new-user{
+    display: inline;
+    margin-left: 20px;
+    display: none;
+}
+.sticky-new-user a{
+    margin-right: 15px;
+}
+.sticky-new-user a:last-child{
+    color: #fc0254;
+}
+.user-log .login{
+    display: block;
+    margin: auto;
+    margin-left: 90px;
+    padding-bottom: 20px;
+    background: #08192d;
+    width: 57px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+.menu-bars{
+    background: #222;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    margin-top: -93px;
+    padding: 0px 18px 3px 18px;
+    height: 42px;
+    right: 80px;
+    vertical-align: baseline;
+    position: absolute;
+    margin-left: 160px;
+    cursor: pointer;
+}
+.menu-bars h5{
+    display: inline-block;
+    margin-top: 10px;
+}
+/*-----------------intro section -----------------*/
+.intro{
+    background:#0a183d;
+    padding: 100px;
+}
+.intro .row{
+    justify-content: space-evenly;
+}
+.intro-info{
+    width: 41%;
+    color: #fff;
+}
+.intro-info h1{
+    line-height: 0.9;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+.intro-info h1 span{
+    line-height: 0.9;
+    color: #fc0254;
+}
+.intro-info p{
+    width: 420px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+.site-btn {
+	display: inline-block;
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	min-width: 195px;
+	padding: 23px 8px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	background: #fc0254;
+	color: #fff;
+	line-height: normal;
+	cursor: pointer;
+	text-align: center;
+}
+
+.site-btn:hover {
+	color: #fff;
+}
+
+.site-btn.sb-c2 {
+	background: #383b70;
+}
+.intro-img{
+    width: 48%;
+}
+.intro-img img{
+    width: 100%;
+}
+/*-----------------access control section -----------------*/
+.access{
+    padding: 100px;
+}
+.access .row{
+    justify-content: center;
+}
+.section-title{
+    width: 43%;
+}
+.section-title h1{
+    font-size: 64px;
+    margin: 0;
+    color: #0a183d;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: capitalize;
+}
+.access-info{
+    width: 40%;
+    padding: 0px 20px;
+}
+.access-info p{
+    line-height: 1.8;
+    color: #6a7080;
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    max-width: 495px;
+}
+/*-----------------how it work -----------------*/
+.work{
+    background-image: url(img/how-to-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+.work .section-title h1{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.work-info{
+    width: 30%;
+    flex: 30%;
+    padding: 10px ;
+}
+.work-img{
+    position: relative;
+    background: #fc0254;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.work-img img{
+    position: absolute;
+    right: -8px;
+    bottom: 0;
+}
+.work-info h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 27px;
+}
+.work-info p{
+    color: #fff;
+    opacity: 0.6;
+    font-weight: 400;
+}
+/*-----------------concept -----------------*/
+.concept{
+    padding: 100px;
+}
+.concept .section-title{
+    max-width: 50%;
+    flex: 50%;
+}
+.concept .concept-info{
+    max-width: 50%;
+    flex: 50%;
+}
+.concept-info p{
+    line-height: 1.8;
+    color: #6a7080;
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    max-width: 490px;
+    margin-top: 10px;
+}
+.upper-part{
+    margin-bottom: 30px;
+}
+.artist-box{
+    width: 25%;
+    flex: 25%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.artist-box img{
+    border-radius: 40px;
+}
+.artist-box h5{
+    font-size: 20px;
+}
+/*-----------------pricing section-----------------*/
+.pricing{
+    padding: 105px 0;
+    background: #0a183d;
+}
+.price-details{
+    width: 41%;
+    flex: 41%;
+    padding: 20px;
+}
+.price-details p{
+    color: #fff;
+    opacity: 0.6;
+    line-height: 1.8;
+    margin: 0px 0px 40px;
+    font-weight: 400;
+    max-width: 518px;
+}
+.price-details h1{
+    color: #fff;
+    font-size: 60px;
+    margin: 0px 0px 20px;
+    font-weight: 500;
+    line-height: 1;
+    padding-right: 100px;
+}
+.price-details h4{
+    color: #fc0254;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px 0px 30px;
+}
+.price-info{
+    width: 41%;
+    flex: 41%;
+    padding: 20px;
+}
+.price-benifits{
+    background: #1c294a;
+    border-radius: 42px;
+    padding: 70px 15px 50px 155px;
+}
+.price-benifits ul li{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    list-style: none;
+    text-transform: capitalize;
+}
+.price-benifits ul li img{
+    margin-right: 30px;
+}
+/*-----------------pricing section-----------------*/
+.premium{
+    padding: 100px;
+}
+.premium .section-title{
+    max-width: 50%;
+    flex: 50%;
+}
+.premium .concept-info{
+    max-width: 50%;
+    flex: 50%;
+}
+.premium-info p{
+    line-height: 1.8;
+    color: #6a7080;
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    max-width: 490px;
+    margin-top: 10px;
+}
+.upper-part{
+    margin-bottom: 30px;
+}
+.premium-box{
+    width: 25%;
+    flex: 25%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.premium-box img{
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.premium-box h5{
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 0px 0px 4px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.premium-box span{
+    color: #6a7080;
+    line-height: 1.8;
+    font-weight: 500;
+}
+/*-----------------footer-----------------*/
+footer{
+    padding: 100px 0px 85px;
+    background: #0a183d;
+}
+.foot-col{
+    width: 50%;
+    flex: 50%;
+}
+.foot-col a{
+    color: #007bff;
+}
+.foot-col p{
+    text-transform: uppercase;
+    color: #6a7080;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 10px 0 25px;
+}
+.social-icons i{
+    margin-right: 35px;
+    font-size: 18px;
+    color: #6a7080;
+}
+.foot-nav-col {
+    width: 33%;
+    flex-direction: 33%;
+}
+.foot-nav-col h3{
+    color: #fff;
+    text-transform: uppercase;
+}
+.foot-nav-col ul{
+    padding: 0px;
+}
+.foot-nav-col ul li {
+    list-style: none;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.foot-nav-col ul li a{
+    color: #6a7080;
+    font-size: 14px;
+    font-weight: 500;
+}
+/*----------------------for small devices-------------------- */
+@media only screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+    }
+    .container-fluid .row{
+        flex-direction: row;
+    }
+    #upperlog{
+        display: none;
+    }
+    .logo{
+        padding: 10px;
+    }
+    .sticky-menu{
+        width: 500px;
+        margin: auto;
+    }
+    .sticky-new-user{
+
+    }
+    .menu-bars{
+        right: 12px;
+    }
+    nav ul{
+        display: none;
+    }
+
+
+    .intro{
+        padding: 40px;
+    }
+    .intro-info h1{
+        font-size: 70px;
+        width: 400px;
+    }
+    .intro-img{
+        display: none;
+    }
+    .intro-info .site-btn{
+        margin-bottom: 10px;
+    }
+    .site-btn.sb-c2{
+        margin-bottom: 50px;
+    }
+    .section-title{
+        width: 80%;
+    }
+    .section-title h1{
+        font-size: 40px;
+    }
+
+
+    .access{
+        padding: 40px;
+        margin: auto;
+    }
+    .access-info{
+        width: 80%;
+        padding-left: 0px;
+    }
+
+
+    .work{
+        padding: 40px;
+        text-align: center;
+    }
+    .work-img{
+        text-align: center;
+        left: 40%;
+    }
+    .work-info{
+        width: 97%;
+    }
+
+    .concept{
+        padding: 40px;
+    }
+    .concept .section-title{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .concept .concept-info{
+        max-width: 100%;
+    }
+    .artist-box{
+        width: 100%;
+    }
+
+
+
+    .pricing{
+        padding: 40px;
+    }
+    .price-details{
+        width: 100%;
+    }
+    .price-details h1{
+        font-size: 40px;
+    }
+    .price-details p{
+        max-width: 400px;
+    }
+    .price-info{
+        width: 100%;
+        padding: 0px;
+    }
+    .price-benifits{
+        padding: 50px;
+    }
+
+
+    .premium{
+        padding: 40px;
+    }
+    .premium .section-title{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .premium-info{
+        max-width: 100%;
+    }
+    .premium-box{
+        width: 100%;
+    }
+
+
+    footer{
+        padding: 40px;
+        text-align: center;
+    }
+    .foot-col{
+        width: 100%;
+        text-align: center;
+    }
+    .foot-logo{
+        padding: 20px;
+    }
+    .foot-nav-col{
+        width: 100%;
+    }
+}
